@@ -1,0 +1,21 @@
+body { 
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: normal;
+  font-family: "Roboto-Regular", "Arial", "Helvetica", sans-serif;    
+}
+.promo-title {
+  font-size: 35px;
+  line-height: 42px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Roboto-Regular", "Arial", "Helvetica", sans-serif;
+}
+.content-title {
+  font-size: 60px;
+  line-height: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: "Roboto-Regular", "Arial", "Helvetica", sans-serif;
+}
