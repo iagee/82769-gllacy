@@ -19,16 +19,21 @@
           <li class="menu">
             <a class="activ-submenu" href="#">Каталог</a>
             <ul class="submenu">
+              <li class="submenu-menu sub-line">
+                <a class="sub" href="#">Новинки</a>
+              </li>
               <li class="submenu-menu">
-                <a class="activ-sub" href="#">Новинки</a></li>
+                <a class="sub" href="/inner.html">Сливочное</a>
+              </li>
               <li class="submenu-menu">
-                <a class="norm-sub" href="/inner.html">Сливочное</a></li>
-              <li class="submenu-menu-hover">
-                <a class="norm-sub-hover" href="/inner.html">Щербеты</a></li>
+                <a class="sub" href="/#">Щербеты</a>
+              </li>
               <li class="submenu-menu">
-                <a class="norm-sub" href="#">Фруктовый лед</a></li>
+                <a class="sub" href="#">Фруктовый лед</a>
+              </li>
               <li class="submenu-menu">
-                <a class="norm-sub" href="#">Мелорин</a></li>
+                <a class="sub" href="#">Мелорин</a>
+              </li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a>
@@ -52,13 +57,12 @@
             <form class="uzer-hover" action="#" method="post">
               <input class="uzer-go" type="email" name="mail" placeholder="Электронная почта">
               <input class="uzer-go" type="password" name="pass" placeholder="Пароль">
-              <button class="red-btn" type="submit">Войти
-              </button>
+              <button class="red-btn" type="submit">Войти</button>
               <div class="user-help">
-                <p class="help">
+                <div class="help">
                   <a class="forgot" href="#">Забыли пароль?</a>
                   <a class="new-log" href="#">Новая регистрация</a>
-                </p>
+                </div>
               </div>
             </form>
           </div>
@@ -67,8 +71,7 @@
           <a class="uzer-decor">Пусто</a>
           <div class="popup basket-hover">
             <div class="good-basket">
-              <img src="img/icons/close.png" alt="закрыть">
-              <img src="img/content/m-orange.png" alt="закрыть">
+              <a class="close" href="#"></a>
               <span class="basket-text">Пломбир с апельсиновым джемом"</span>
               <div class="basket-price">
                 <span class="heft">1,5кг</span>
@@ -77,7 +80,7 @@
               </div>
             </div>
             <div class="good-basket">
-              <img src="img/icons/close.png" alt="закрыть">
+              <a class="close" href="#"></a>
               <img src="img/content/m-strawberry.png" alt="клубничный пломбир">
               <span class="basket-text">Клубничный пломбир с присыпкой из белого шоколада"</span>
               <div class="basket-price">
@@ -90,22 +93,18 @@
             <a class="red-btn" href="#">Оформить заказ</a>
           </div>
         </div>
-        <p class="uzer-text">С 10 до 20, ежедневно
-          <span class="phone"> 8 812 450-25-25
-          </span>
-        </p>
+        <div class="uzer-text">С 10 до 20, ежедневно
+          <span class="phone"> 8 812 450-25-25</span>
+        </div>
       </div>
     </div>
   </header>
   <!-- main -->
   <main class="container">
     <ul class="breadcrumbs">
-      <li><a href="#">Главная</a>
-      </li>
-      <li><a href="#">Каталог</a>
-      </li>
-      <li class="active">Сливочное
-      </li>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">Каталог</a></li>
+      <li class="active">Сливочное</li>
     </ul>
     <h1 class="content-title">Сливочное мороженое</h1>
     <div class="container-common">
@@ -113,16 +112,22 @@
         <form action="#" method="post">
           <div class="filter">
             <div class="sorting">
-              <div class="form-title">Сортировка:</div>
+              <div class="form-title">Сортировка:
+                <ul class="submenu submenu-close">
+                  <li class="submenu-menu">сначала недорогие</li>
+                  <li class="submenu-menu">сначала дорогие</li>
+                  <li class="submenu-menu">по жирности</li>
+                </ul>
+              </div>
               <input class="dial sort" type="text" name="sort" value="" placeholder="по популярности">
-              <span class="select"><img src="img/icons/select.png" width="7" height="5" alt=""></span>
+              <span class="sort-go"><img src="img/icons/select.png" width="7" height="5" alt=""></span>
               <div class="price">
                 <!--Этот фильтр, с ценой, я незнаю как сделать -->
                 <div>Цена: 100 руб. – 500 руб.</div>
               </div>
             </div>
             <div class="fat">
-              <span>Жирность:</span>
+              <div class="form-title">Жирность:</div>
               <ul class="fat-list">
                 <li class="fat-point">
                   <input class="fat-sort" id="cfirst" type="radio" name="point">
@@ -151,7 +156,7 @@
               </ul>
             </div>
             <div class="filler">
-              <span>Наполнители:</span>
+              <div class="form-title">Наполнители:</div>
               <ul class="filler-list">
                 <li class="filler-rez">
                   <input class="filler-sort" id="rfirst" type="checkbox" checked name="rez">
