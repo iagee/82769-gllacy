@@ -1,5 +1,5 @@
-
 body {
+  min-width: 1200px;
   font-size: 14px;
   line-height: 24px;
   color: #ffffff;
@@ -20,8 +20,19 @@ body {
   color: #ffffff;
   font-weight: bold;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin-bottom: 30px;
+  width: 1146px;
+}
+.content-font {
+  text-align: left;
+  font-size: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-bottom: 40px;
 }
+
 .clearfix::after {
   content: "";
   display: table;
@@ -30,7 +41,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 20;
+  padding: 0 20px;
 }
 .main-navigation {
   float: left;
@@ -46,18 +57,15 @@ body {
   width: 267px;
 }
 .user-block {
-  float: left;
-  width: 93;
+  width: 93px;
 }
 .basket-block {
-  float:right;
+  float: right;
   width: 118px;
 }
 .top-menu {
   margin: 0;
   padding: 0;
-  float: left;
-  max-width: 800px;
 }
 .top-menu li {
   float: left;
@@ -76,38 +84,35 @@ body {
 .popup {
   display: none;
 }
-.promo {
-  
+.promolist {
+  width: 1146px;
+  margin-left: 27px;
+  margin-right: 27px;
 }
 .promo-left {
   float: left;
   width: 560px;
   min-height: 230px;
+  margin-right: 26px;
 }
 .promo-right {
   float: right;
   width: 560px;
   min-height: 230px;
 }
-.goods {
- margin-bottom: 40px; 
-}
-.good {
-  float: left;
-  width: 267px;
-  margin-right: 26px;
-}
 .shop-title {
   float: left;
   width: 1100px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
 }
-.shop-text {
-  float: left;
-  width: 540px;
+.new-mail {
+  margin-bottom: 40px;
 }
 .new-block {
   float: left;
-  width: 540px;
+  width: 560px;
 }
 .mail-block {
   float: right;
@@ -116,21 +121,21 @@ body {
 .new-title {
   float: left;
 }
-connection-box {
+.connection-box {
   display: none;
 }
 .contact {
-  
   width: 304px;
 }
 .main-footer {
-  padding-top: 36x;
-  padding-bottom: 29x;
+  padding-top: 36px;
+  padding-bottom: 29px;
 }
 .footer-social {
   float: left;
-  width: 186px;
+  width: 267px;
   min-height: 104px;
+  margin-left: 27px;
 }
 .footer-navigation {
   float: left;
@@ -141,25 +146,19 @@ connection-box {
   float: right;
   width: 190px;
   min-height: 104px;
+  margin-right: 27px;
 }
 .breadcrumbs {
   width: 1146px;
-  height: 15px;
   padding: 0;
-  margin-bottom: 10px; 
-}
-.content-title {
-  width: 1146px;
-  height: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .breadcrumbs li {
   float: left;
   margin-right: 40px;
 }
 .good-list {
-  float: left;
-  width: 1146px;
+  
   font-size: 0px;
 }
 .good {
@@ -169,19 +168,22 @@ connection-box {
   margin-right: 26px;
   font-size: 14px;
   margin-bottom: 40px;
+  height: 330px;
 }
-.good:nth-child(3n) {
+.goods {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.good:nth-child(4n) {
   margin-right: 0;
 }
 .paginator {
-  float: left;
+  text-align: right;
   margin-bottom: 40px;
-  width: 267px;
-  padding: 0 0 0 940px;
   font-size: 16px;
 }
 .paginator li {
-  float: left;
+  display: inline-block;
   margin-right: 40px;
 }
 .checkbox-list {
@@ -213,8 +215,35 @@ connection-box {
   margin-right: 0px;
 }
 .filter {
-  width: 860px; 
+  width: 860px;
 }
 .filler {
-  width: 705px; 
+  width: 705px;
+}
+.slide-next {
+  position: relative;
+  text-align: center;
+}
+.content-title {
+  position: absolute;
+  width: 700px;
+  height: 110px;
+  top: 390px;
+  left: 550px;
+}
+.uzer-list {
+  display: inline-block;
+  vertical-align: top;
+}
+.block-list {
+  display: inline-block;
+  vertical-align: top;
+  width: 484px;
+  margin-left: 77px;
+  margin-right: 22px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.map {
+  text-align:center;
 }
